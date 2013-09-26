@@ -1,0 +1,713 @@
+/* JQUERY BOXES */			
+
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+
+.window {
+  position:absolute;
+  left:0;
+  top:0;
+  background-color:#ededed;
+  display:block;
+  z-index:9999;
+}	
+
+.treeModal
+{
+	width:760px;
+  	height:580px;
+  	padding:10px 20px;
+}
+		
+	.treeModal h1
+	{
+		font-size:24px;
+		color:#ff6600;
+		letter-spacing:8px;
+		font-weight:normal;
+	}	
+	
+	.treeModal h2
+	{
+		font-size:24px;
+	}	
+	
+	.treeModal div
+	{
+		float:left;
+		width:520px;
+	}	
+	
+		.treeModal div ul.treePartHeader
+		{
+			float:left;
+			width:520px;
+			list-style:none;
+			padding-top:25px;
+			padding-bottom:5px;
+		}
+		
+			.treeModal div ul.treePartHeader li
+			{
+				float:left;
+			}
+			
+				.treeModal div ul.treePartHeader li.first
+				{
+					width:172px;
+					font-size:16px;
+					font-weight:bold;
+					padding-left:4px;
+				}
+				
+				.treeModal div ul.treePartHeader li.second
+				{
+					width:78px;
+					font-size:12px;
+					color:#999999;
+				}
+				
+				.treeModal div ul.treePartHeader li.third
+				{
+					width:88px;
+					font-size:12px;
+					color:#999999;
+				}
+				
+				.treeModal div ul.treePartHeader li.fourth
+				{
+					width:108px;
+					font-size:12px;
+					color:#999999;
+				}
+				
+				.treeModal div ul.treePartHeader li.fifth
+				{
+					width:35px;
+					font-size:12px;
+					color:#999999;
+				}
+				
+				
+		.treeModal div ul.treeLeaves
+		{
+			float:left;
+			width:520px;
+			height:47px;
+			list-style:none;
+			padding-top:6px;
+			background-image:url(../images/leavesBg.gif);
+			background-repeat:no-repeat;
+			background-position:left top;
+			margin-bottom:5px;
+		}
+		
+			.treeModal div ul.treeLeaves li
+			{
+				float:left;
+			}
+			
+				.treeModal div ul.treeLeaves li.first
+				{
+					width:164px;
+					font-size:16px;
+					font-weight:bold;
+					padding:10px 0 0 12px;
+				}
+				
+				.treeModal div ul.treeLeaves li.second
+				{
+					width:70px;
+					font-size:12px;
+					color:#999999;
+					background-image:url(../images/sep.gif);
+					background-repeat:no-repeat;
+					background-position:right center;
+					padding:12px 0 8px 5px;
+				}
+				
+				.treeModal div ul.treeLeaves li.third
+				{
+					width:88px;
+					font-size:12px;
+					color:#999999;
+					background-image:url(../images/sep.gif);
+					background-repeat:no-repeat;
+					background-position:right center;
+					padding:12px 0 8px 5px;
+				}
+				
+				.treeModal div ul.treeLeaves li.fourth
+				{
+					width:108px;
+					font-size:12px;
+					color:#999999;
+					padding:8px 0 8px 5px;
+				}
+				
+				.treeModal div ul.treeLeaves li.fifth
+				{
+					width:35px;
+					font-size:32px;
+					color:#ff6600;
+					padding:5px 0 0 2px;
+				}
+				
+		
+		.treeModal div ul.treeFlowers
+		{
+			float:left;
+			width:520px;
+			height:47px;
+			list-style:none;
+			padding-top:6px;
+			background-image:url(../images/flowersBg.gif);
+			background-repeat:no-repeat;
+			background-position:left top;
+			margin-bottom:5px;
+		}
+		
+			.treeModal div ul.treeFlowers li
+			{
+				float:left;
+			}
+			
+				.treeModal div ul.treeFlowers li.first
+				{
+					width:164px;
+					font-size:16px;
+					font-weight:bold;
+					padding:10px 0 0 12px;
+				}
+				
+				.treeModal div ul.treeFlowers li.second
+				{
+					width:70px;
+					font-size:12px;
+					color:#999999;
+					background-image:url(../images/sep.gif);
+					background-repeat:no-repeat;
+					background-position:right center;
+					padding:12px 0 8px 5px;
+				}
+				
+				.treeModal div ul.treeFlowers li.third
+				{
+					width:88px;
+					font-size:12px;
+					color:#999999;
+					background-image:url(../images/sep.gif);
+					background-repeat:no-repeat;
+					background-position:right center;
+					padding:12px 0 8px 5px;
+				}
+				
+				.treeModal div ul.treeFlowers li.fourth
+				{
+					width:108px;
+					font-size:12px;
+					color:#999999;
+					padding:8px 0 8px 5px;
+				}
+				
+				.treeModal div ul.treeFlowers li.fifth
+				{
+					width:35px;
+					font-size:32px;
+					color:#ff6600;
+					padding:5px 0 0 2px;
+				}
+			
+		
+		.treeModal div ul.treeFruits
+		{
+			float:left;
+			width:520px;
+			height:47px;
+			list-style:none;
+			padding-top:6px;
+			background-image:url(../images/fruitsBg.gif);
+			background-repeat:no-repeat;
+			background-position:left top;
+			margin-bottom:5px;
+		}
+		
+			.treeModal div ul.treeFruits li
+			{
+				float:left;
+			}
+			
+				.treeModal div ul.treeFruits li.first
+				{
+					width:164px;
+					font-size:16px;
+					font-weight:bold;
+					padding:10px 0 0 12px;
+				}
+				
+				.treeModal div ul.treeFruits li.second
+				{
+					width:70px;
+					font-size:12px;
+					color:#999999;
+					background-image:url(../images/sep.gif);
+					background-repeat:no-repeat;
+					background-position:right center;
+					padding:12px 0 8px 5px;
+				}
+				
+				.treeModal div ul.treeFruits li.third
+				{
+					width:88px;
+					font-size:12px;
+					color:#999999;
+					background-image:url(../images/sep.gif);
+					background-repeat:no-repeat;
+					background-position:right center;
+					padding:12px 0 8px 5px;
+				}
+				
+				.treeModal div ul.treeFruits li.fourth
+				{
+					width:108px;
+					font-size:12px;
+					color:#999999;
+					padding:8px 0 8px 5px;
+				}
+				
+				.treeModal div ul.treeFruits li.fifth
+				{
+					width:35px;
+					font-size:32px;
+					color:#ff6600;
+					padding:5px 0 0 2px;
+				}	
+		
+	.treeModal p
+	{
+		float:right;
+		width:200px;
+		padding-top:460px;
+		text-align:right;
+	}
+			
+		.treeModal p input
+		{
+			width:80px;
+			height:32px;
+			background-color:#d6696a;
+			color:#ffffff;
+			font-size:15px;
+			border:none;
+			text-align:left;
+			padding:0 0 0 10px;
+			font-weight:bold;
+			cursor:pointer;
+			margin-right:5px;
+		}	
+			
+			.treeModal p input.close
+			{
+				background-color:#dc8989;
+			}
+			
+			
+	
+.selectTreeModal
+{
+	width:740px;
+  	height:590px;
+  	padding:10px 20px;
+}	
+			
+	.selectTreeModal h1
+	{
+		font-size:24px;
+		color:#999999;
+	}	
+	
+	.selectTreeModal div.selectTreeInputBox
+	{
+		margin:25px 0px 25px;
+		padding:0px 5px;
+		background-image:url(../images/treeSelectInput.jpg);
+		background-repeat:no-repeat;
+		width:370px;
+		height:42px;
+		float:left;
+	}
+	
+		.selectTreeModal div.selectTreeInputBox input
+		{
+			border:none;
+			background:none;
+			width:370px;
+			height:42px;
+			font-size:15px;
+			color:#333333;
+			font-weight:bold;
+			outline:none;
+		}
+		
+	.selectTreeModal div.selectionBox
+	{
+		float:left;
+		position:relative;
+		width:755px;
+		height:365px;
+		background-color:#FFFFFF;
+	}
+	
+		ul.mainSelection
+		{
+			position:absolute;
+			float:left;
+			list-style:none;
+			width:140px;
+		}
+		
+			ul.mainSelection
+			{
+				float:left;
+			}
+			
+				ul.mainSelection a:link,
+				ul.mainSelection a:visited
+				{
+					float:left;
+					background-image:url(../images/treeMain.png);
+					background-repeat:no-repeat;
+					width:139px;
+					height:73px;
+				}
+				
+				ul.mainSelection a:hover,
+				ul.mainSelection a.selected:link,
+				ul.mainSelection a.selected:visited,
+				ul.mainSelection a.selected:hover
+				{
+					float:left;
+					background-image:url(../images/treeMainSelected.png);
+					background-repeat:no-repeat;
+					width:139px;
+					height:73px;
+				}
+		
+		
+		ul.subSelection
+		{
+			position:absolute;
+			left:103px;
+			float:left;
+			list-style:none;
+			width:145px;
+			height:365px;
+			background-image:url(../images/subBg.gif);
+			background-repeat:repeat-y;
+		}
+		
+			ul.subSelection
+			{
+				float:left;
+			}
+			
+				ul.subSelection a:link,
+				ul.subSelection a:visited
+				{
+					float:left;
+					width:100px;
+					height:35px;
+					padding:18px 0 0 45px;
+					font-weight:bold;
+					color:#333333;
+				}
+				
+				ul.subSelection a:hover,
+				ul.subSelection a.selected:link,
+				ul.subSelection a.selected:visited,
+				ul.subSelection a.selected:hover
+				{
+					background-image:url(../images/subSelected.gif);
+					background-repeat:no-repeat;
+				}
+	
+		.selectionBox blockquote
+		{
+			position:absolute;
+			left:220px;
+			float:left;
+			list-style:none;
+			width:532px;
+		}
+	
+			.selectionBox blockquote dl.desc
+			{
+				float:left;
+				width:510px;
+				padding:10px 0 50px 20px;
+			}
+	
+				.selectionBox blockquote dl.desc dt
+				{
+					float:left;
+					width:180px;
+				}	
+				
+				.selectionBox blockquote dl.desc dd
+				{
+					float:left;
+					width:200px;
+					padding-top:10px;
+				}	
+					
+					.selectionBox blockquote dl.desc dd strong
+					{
+						font-size:16px;
+						float:left;
+						width:300px;
+					}
+					
+					.selectionBox blockquote dl.desc dd em
+					{
+						float:left;
+						width:300px;
+						font-family:Georgia, "Times New Roman", Times, serif;
+						padding:8px 0 35px;
+					}
+	
+					.selectionBox blockquote dl.desc dd span
+					{
+						font-size:12px;
+						color:#333333;
+						float:left;
+						width:300px;
+					}
+	
+	
+			.selectionBox blockquote dl.prop
+			{
+				float:left;
+				width:155px;
+				font-size:11px;
+				color:#333333;
+				padding-left:10px;
+			}
+	
+				.selectionBox blockquote dl.prop dt
+				{
+					float:left;
+					width:50px;
+				}	
+				
+				.selectionBox blockquote dl.prop dd
+				{
+					float:left;
+					width:105px;
+				}	
+	
+		.selectTreeModal p
+		{
+			float:right;
+			width:700px;
+			padding-top:40px;
+			text-align:right;
+		}
+				
+			.selectTreeModal p input
+			{
+				width:80px;
+				height:32px;
+				background-color:#d6696a;
+				color:#ffffff;
+				font-size:15px;
+				border:none;
+				text-align:left;
+				padding:0 0 0 10px;
+				font-weight:bold;
+				cursor:pointer;
+				margin-right:5px;
+			}	
+				
+				.selectTreeModal p input.close
+				{
+					background-color:#dc8989;
+				}
+	
+	
+	
+.addTreeModal
+{
+	width:800px;
+ 	height:580px;	
+ 	/*padding:10px 20px;*/
+}
+
+	.addTreeModal h2
+	{
+		font-size:14px;
+		font-weight:normal;
+		padding:10px 20px;
+	}
+	
+	.addTreeModal h1
+	{
+		font-size:24px;
+		font-weight:normal;
+		padding:0px 20px 20px;
+	}
+	
+	.addTreeModal blockquote
+	{
+		float:left;
+		width:358px;
+		padding:10px 20px;
+	}
+	
+	.addTreeModal blockquote.border
+	{
+		border-right:#cccccc 1px solid;
+	}
+	
+		.addTreeModal blockquote dl
+		{
+			float:left;
+			width:360px;
+			padding:0 0 5px 0;
+		}
+		
+		.addTreeModal blockquote dl.extraTopPadding
+		{
+			padding:25px 0 5px 0;
+		}
+		
+			.addTreeModal blockquote dl dt
+			{
+				float:left;
+				width:105px;
+				padding:5px 0 0;
+			}
+			
+			.addTreeModal blockquote dl dd
+			{
+				float:left;
+				width:255px;
+			}
+			
+				.addTreeModal blockquote dl dd div
+				{
+					float:left;
+					width:194px;
+					height:27px;
+					background-image:url(../images/addTreeFormFieldBg.jpg);
+					background-repeat:no-repeat;
+					padding:3px 3px 0 3px;
+				}
+				
+					.addTreeModal blockquote dl dd div input
+					{
+						width:192px;
+						border:none;
+						font-size:12px;
+						outline:none;
+						padding:2px 0 0 1px;
+						color:#999999;
+					}
+					
+					.addTreeModal blockquote dl dd div select
+					{
+						width:192px;
+						border:none;
+						font-size:12px;
+						outline:none;
+						padding:0px 0 0 1px;
+						color:#999999;
+					}
+				
+				.addTreeModal blockquote strong
+				{
+					font-weight:normal;
+					padding:0px 0 5px;
+					float:left;
+					width:300px;
+				}
+				
+				.addTreeModal blockquote p
+				{
+					float:left;
+					width:290px;
+					height:190px;
+					background-image:url(../images/addTreeFormTextareaBg.jpg);
+					background-repeat:no-repeat;
+					padding:5px;
+				}
+				
+					.addTreeModal blockquote p textarea
+					{
+						width:285px;
+						height:185px;
+						border:none;
+						outline:none;
+					}
+				
+				
+				
+	
+	.addTreeModal span
+	{
+		float:right;
+		width:770px;
+		padding:15px;
+		text-align:right;
+		background-image:url(../images/line.jpg);
+		background-repeat:repeat-x;
+		background-position:left top;
+		margin-top:20px;
+	}
+			
+		.addTreeModal span input
+		{
+			width:80px;
+			height:32px;
+			background-color:#d6696a;
+			color:#ffffff;
+			font-size:15px;
+			border:none;
+			text-align:left;
+			padding:0 0 0 10px;
+			font-weight:bold;
+			cursor:pointer;
+			margin-right:5px;
+		}	
+			
+			.addTreeModal span input.close
+			{
+				background-color:#dc8989;
+			}
+	
+	
+	.tooltip
+	{
+		background-image:url(../images/tooltipBg.jpg);
+		background-repeat:repeat-y;
+		position:absolute;
+		width:254px;
+		left:330px;
+		top:362px;
+	}
+	
+		.tooltip small
+		{
+			float:left;
+			width:234px;
+			padding:0 10px;
+			font-family:Georgia, "Times New Roman", Times, serif;
+			font-size:14px;
+			font-style:italic;
+		}
+		

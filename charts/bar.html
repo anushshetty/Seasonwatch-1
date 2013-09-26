@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>graphs Example</title>
+
+		<script type="text/javascript" src="./jquery.js"></script>
+		<script type="text/javascript">
+
+var setGraph='bar';
+$(function () 
+{
+    var chart;
+    
+    $(document).ready(function () 
+    {
+    	// Build the chart
+        var drawGraph = function(setGraph)
+        {
+            $('#container').highcharts
+            ({
+                chart: {
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false
+                },
+                title: {
+                    text: 'Season Watch Data Visualization - 2013'
+                },
+                tooltip: {
+                    pointFormat: '{series.name}: <b>{point.percentage}</b>',
+                    percentageDecimals:1
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: false
+                        },
+                        showInLegend: true
+                    }
+                },
+                series: 
+                [{
+                    type: setGraph,
+                    name: 'Tree count',
+                    data: [["Jackfruit",889],["Mango (unknown variety)",517],["Tamarind",229],["Amla",186],["Teak",171],["Indian Laburnum",149],["Jamun",144],["Gulmohur",106],["Neem",104],["Pongam Tree",84],["Peepal",83],["Maulsari",83],["Purple Bauhinia",81],["Chandada",78],["Devil's Tree",57],["Country Fig",50],["White Babool",47],["Rain tree",47],["Sandalwood",46],["Copper-pod",44],["Spanish Flag",43],["Krishna Siris",41],["Wood Apple",39],["True Ashoka",36],["Pride of India",33],["Red Silk Cotton",28],["Gamar",25],["Banyan",22],["Indian Coral ",18],["Kadamb",15],["Indian Elm",14],["Night Flowering Jasmine ",12],["Singapore Cherry",10],["Champa",8],["Babool",8],["Box Myrtle",7],["Mahua",7],["Lal champa",7],["African Tulip",6],["Himalayan Rhododendron",6],["Jacaranda",5],["Mast Tree",5],["Axlewood",4],["Indian Horsechestnut",4],["Tree of Heaven",4],["White Silk Cotton",4],["Black Dammer",3],["Arjun",3],["Jhinjheri",3],["Grey Mangrove",3],["White Siris",3],["Sausage Tree",3],["Mango: Alphonso",3],["Mango: Aabehayat",3],["Siris",2],["Caribbean Trumpet Tree",2],["Floss Silk Tree",2],["Himalayan Maple",2],["Fish-tail Palm",2],["Mango: Bathua",2],["Indian Almond",2],["Yellow Silk Cotton",2],["Flame of the Forest",2],["Bastard Rosewood",2],["Mango: Airi",2],["Mango: Olour",1],["Ber",1],["Duabanga",1],["Mango: Arkapuneet",1],["Indian Rosewood",1],["Kanak Champa",1],["Mango: Allampur Beneshan",1],["Mango: Sukul",1],["Grey Oak",1],["Indian Cork Tree",1],["Mango: Suvarnarekha",1],["Himalayan Cherry",1],["Mango: Chosa",1],["Indian Mahogany",1],["Elephant Apple",1],["Mango: Amrapali",1],["Mango: Zawahiri",1],["China Berry",1],["Walnut",1]]
+                }]
+            });
+        }
+     $('#changeGraph').change(function (){
+        drawGraph(this.value);
+     });
+     drawGraph("pie");
+    });
+        
+    
+});
+		</script>
+	</head>
+	<body>
+<script src="./highcharts.js"></script>
+<script src="./exporting.js"></script>
+
+<div id="container" style="min-width: 800px; height: 800px; margin: 0 auto"></div>
+<select 
+    id="changeGraph">
+  <option value="bar">Bar-graph</option>
+  <option value="line">Line-graph</option>
+  <option value="area">Area-graph</option>
+  <option value="pie">pie-graph</option>
+</select>
+	</body>
+</html>

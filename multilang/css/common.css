@@ -1,0 +1,23 @@
+html{}
+
+input { outline:none; }
+
+.floatLeft{ float:left !important; }
+.floatRight{ float:right !important; }
+
+.clearBoth{ clear:both; }
+
+.alignVerticalTop{ vertical-align:top; }
+.alignVerticalMiddle{ vertical-align:middle; }
+.alignVerticalBottom{ vertical-align:bottom; }
+
+.textAlignLeft{ text-align:left; }
+.textAlignCenter{ text-align:center; }
+.textAlignRight{ text-align:right; }
+
+.percentHolder{ width:100%; }
+
+.displayNone { display:none; }
+.displayBlock { display:block; }
+.noMargin{ margin:0 !important; padding:0 !important;}
+.redColor{margin:0px; padding:0px; color:#cc3300 !important; text-transform:uppercase;}

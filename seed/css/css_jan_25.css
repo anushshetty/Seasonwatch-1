@@ -1,0 +1,1604 @@
+
+
+/* 
+	*************************
+	Global Style Declaration 
+	*************************
+*/
+
+html {
+}
+
+body {
+	background-color:#6fc319;
+	background-image:url(../images/bg.jpg);
+	background-repeat:repeat-x;
+	margin:0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#666666;
+}
+
+/* 
+	*****************************
+	Containers' Style Declaration 
+	*****************************
+*/
+
+h1, h2, h3, h4, h5, h6, blockquote, p, dl, dt, dd, ul, li, form {
+	padding:0;
+	margin:0;
+}
+
+input {
+	font-size:12px;
+}
+
+img {
+	border:none;
+}
+
+a:link, a:visited {
+	outline:none;
+	color:#be1852;
+	text-decoration:none;
+}
+
+a:hover {
+	outline:none;
+	color:#df4e81;
+	text-decoration:none;
+}
+
+a:focus {
+	outline:none;
+}
+
+
+/* 
+	*****************************
+	Class & Id Style Declaration 
+	*****************************
+*/
+
+.floatLeft {
+	float:left;
+}
+
+.floatRight {
+	float:right;
+}
+
+.clearBoth {
+	clear:both;
+}
+
+.imgAlignVertical {
+	vertical-align:middle;
+}
+
+.percentHolder {
+	width:100%;
+}
+
+.alignCenter {
+	text-align:center;
+}
+
+.alignLeft {
+	text-align:left;
+}
+
+.alignRight {
+	text-align:right;
+}
+
+
+
+#mainHolder {
+	position:relative;
+	margin:auto;
+	overflow:hidden;
+	width:960px;
+	height:100%;
+}
+	
+.footer {
+	text-align: center;
+	color: #caffbe;
+}
+
+.footer span {
+	font: 10px/30px Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+}
+
+.footer a {
+	color: #fff;
+}
+
+	/********************************** Header Holder STARTS **********************************/
+	
+#homeHeader {
+	float:left;
+	width:960px;
+	height:136px;
+	background-image:url(../images/headerGlow.jpg);
+	background-repeat:no-repeat;
+	background-position:left -1px;
+}
+	
+#homeHeader img.logo {
+	margin:25px 0 0 18px;
+	float:left;
+}
+	
+#homeHeader span {
+	float:left;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#FFFFFF;
+	font-style:italic;
+	padding:10px 0 0 230px;
+}
+
+#homeHeader img.season {
+	margin:30px 10px 0 0;
+	float:right;
+}
+
+/********************************** Content Holder STARTS **********************************/
+
+#mainContentHolder {
+	float:left;
+	width:900px;
+	background-color:#fafafa;
+	padding:10px 30px;
+	margin: 0 0 10px;
+}
+	
+/******************************   COMMON PARTS  **********************************/
+
+/* USER STATUS */
+dl.userStatus {
+	float:left;
+	width:900px;
+}
+		
+dl.userStatus dt {
+	font-weight:bold;
+	font-size:12px;
+	color:#6bc5c5;
+	float:left;
+}
+
+dl.userStatus dd {
+	font-weight:bold;
+	font-size:12px;
+	color:#999999;
+	float:right;
+}
+		
+/* Left Block */
+div.leftBlock {
+	float:left;
+	width:600px;
+	padding-top:30px;
+}
+		
+div.leftBlock div.leftHeader {
+	float:left;
+	width:600px;
+	background-image:url(../images/line.jpg);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+}
+
+div.leftBlock div.leftHeader h1 {
+	font-size:24px;
+	float:left;
+	position: relative;
+}
+
+div.leftBlock div.leftHeader h1 span.msg {
+	font: italic 12px Georgia, Times Roman, serif;
+	position: absolute;
+	left: 130px;
+	bottom: 6px;
+	width: 300px;
+}
+div.leftBlock div.leftHeader span {
+	font-size:12px;
+	float:right;
+	font-weight:bold;
+	padding:12px 0 0;
+}
+				
+/* Right Block */
+div.rightBlock {
+	float:right;
+	width:215px;
+	padding-top:30px;
+}
+		
+div.rightBlock div.rightHeader {
+	float:left;
+	width:215px;
+	background-image:url(../images/line.jpg);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+}
+			
+div.rightBlock div.rightHeader h1 {
+	font-size:16px;
+	padding:9px 0 2px 0;
+	float:left;
+}
+
+div.rightBlock div.rightHeader span {
+	font-size:12px;
+	float:right;
+	font-weight:bold;
+	padding:12px 5px 0 0;
+}
+		
+/******************************   COMMON PART ENDS  **********************************/
+
+
+
+/* LOGIN */
+.login {
+	height:520px;
+}
+		
+.login div {
+	width:370px;
+	float:left;
+}
+			
+.login div dl {
+	width:360px;
+	float:left;
+	padding:18px 0 0;
+}
+				
+.login div dl dt {
+	float:left;
+	width:360px;
+	font-weight:bold;
+	padding-bottom:5px;
+}
+					
+.login div dl dd {
+	float:left;
+	width:360px;
+}
+			
+.login div dl dd input.txtInput {
+	width:288px;
+	height:32px;
+	border:#97dbdb 1px solid;
+	color:#666666;
+	font-size:14px;
+}
+
+.login div dl dd input.loginButton {
+	width:126px;
+	height:32px;
+	background-color:#df4e81;
+	color:#ffffff;
+	font-size:15px;
+	border:none;
+	text-align:left;
+	padding:0 0 0 10px;
+	font-weight:bold;
+	cursor:pointer;
+}
+		
+.login div p {
+	width:360px;
+	float:left;
+	padding:18px 0 0;
+	line-height:20px;
+}	
+	
+	
+.login blockquote {
+	width:520px;
+	float:left;
+	padding:15px 0 0;
+}
+
+.login blockquote h1 {
+	font-size:50px;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+.login blockquote p {
+	padding:10px 0 0;
+	line-height:20px;
+	font-size:14px;
+}
+			
+.login div.message {
+	width: auto;
+	background-color: #ffffee;
+	margin: 20px 0 0;
+	border: 1px solid #f0f0f0;
+	padding: 0;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	
+	-moz-box-shadow: 2px 1px 1px  #888;
+	-webkit-box-shadow:1px 1px 1px #888;
+	box-shadow:1px 1px 2px  #888;
+}
+.login div.message p {
+	padding: 10px;
+	width: 270px;
+}
+			
+div.message p img {
+	position: relative;
+	top: 3px;
+}
+/* HOME */
+.home {
+	min-height:520px;
+}	
+.home div.message {
+
+	background-color: #ffffee;
+	margin: 10px 0;
+	width: 600px;
+	
+	border: 1px solid #f0f0f0;
+	padding: 0;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	
+	-moz-box-shadow: 2px 1px 1px  #888;
+	-webkit-box-shadow:1px 1px 1px #888;
+	box-shadow:1px 1px 2px  #888;
+
+}
+.home div.message p {
+	line-height: 1.4em;
+	padding: 12px 8px;
+}
+
+div.treeRow {
+	float:left;
+	width:600px;
+	padding:5px 0px 4px;
+	background-image:url(../images/line.jpg);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+}
+
+div.treeRowHover {
+	float:left;
+	width:592px;
+	padding:10px 1px 4px 7px;
+	background-image:url(../images/line.jpg);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	background-color:#ededed;
+}
+			
+div.treeRow blockquote,
+				div.treeRowHover blockquote {
+	float:left;
+	width:400px;
+	padding:5px 0 0;
+}
+				
+div.treeRow blockquote span,
+					div.treeRowHover blockquote span {
+	float:left;
+	width:180px;
+	padding:2px 0 0;
+	line-height:20px;
+}
+div.treeRow blockquote img {
+	width:50px;
+	padding:2px 0 0;
+}
+					
+div.treeRow blockquote span a:link,
+div.treeRow blockquote span a:visited,
+div.treeRow blockquote span a:hover,
+div.treeRowHover blockquote span a:link,
+div.treeRowHover blockquote span a:visited,
+div.treeRowHover blockquote span a:hover {
+	font-weight:bold;
+}
+					
+				
+div.treeRow small,
+div.treeRowHover small {
+	float:left;
+	width:303px;
+}
+
+div.treeRow p,
+div.treeRowHover p {
+	float:right;
+	width:126px;
+	padding:0 2px 0 0;
+}
+				
+div.treeRow p label,
+div.treeRowHover p label {
+	text-align:right;
+	width:126px;
+	float:left;
+	height:58px;
+	vertical-align:bottom;
+}
+
+div.treeRow p span,
+div.treeRowHover p span {
+	float:left;
+	text-align:right;
+	width:126px;
+	line-height:28px;
+}
+					
+div.treeRow p span a:link,
+div.treeRow p span a:visited,
+div.treeRow p span a:hover,
+div.treeRowHover p span a:link,
+div.treeRowHover p span a:visited,
+div.treeRowHover p span a:hover {
+	color:#cc3300;
+	font-weight:bold;
+}
+			
+			
+		
+		
+dl.memberList {
+	float:left;
+	width:214px;
+	padding:14px 0px 7px 1px;
+	background-image:url(../images/line.jpg);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+}	
+			
+dl.memberList dt {
+	width:132px;
+	float:left;
+	color:#be1853;
+	font-weight:bold;
+}
+
+dl.memberList dd {
+	width:82px;
+	float:left;
+}
+		
+		
+/* ProfileTree */
+.profileTree {
+	height:520px;
+}	
+			
+			
+div.profileTreeHolder {
+	float:left;
+	width:600px;
+	padding:5px 0;
+}
+			
+div.profileTreeHolder h5 {
+	color:#999999;
+	font-weight:normal;
+	padding:0 0 5px;
+}
+
+div.profileTreeHolder blockquote {
+	float:left;
+	width:600px;
+	padding:20px 0 40px;
+}
+
+div.profileTreeHolder div {
+	float:left;
+	width:208px;
+}
+			
+div.profileTreeHolder div dl {
+	background-image:url(../images/line.jpg);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	float:left;
+	padding:14px 2px;
+	width:204px;
+	font-weight:bold;
+}
+
+div.profileTreeHolder div dl.no {
+	background:none;
+}
+						
+div.profileTreeHolder div dl dt {
+	float:left;
+	width:112px;
+	padding-bottom:5px;
+}
+
+div.profileTreeHolder div dl dd {
+	float:left;
+	width:90px;
+	padding-bottom:5px;
+}
+			
+			
+div.profileTreeHolder p {
+	float:right;
+	width:340px;
+	padding:12px 0 0;
+}
+					
+div.profileTreeHolder p img {
+	margin-right:6px;
+}
+			
+			
+			
+			
+dl.assignedMemberList {
+	float:left;
+	width:214px;
+	padding:14px 0px 7px 1px;
+	background-image:url(../images/line.jpg);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+}	
+		
+dl.assignedMemberList dt {
+	width:132px;
+	float:left;
+	color:#be1853;
+	font-weight:bold;
+}
+			
+dl.assignedMemberList dt a:link,
+dl.assignedMemberList dt a:visited {
+	color:#333333;
+	cursor: default;
+}
+
+dl.assignedMemberList dt a:hover {
+	color:#666666;
+	cursor: default;					
+}
+
+dl.assignedMemberList dt a.dactive:link,
+dl.assignedMemberList dt a.dactive:visited,
+dl.assignedMemberList dt a.dactive:hover {
+	color:#999999;
+	cursor: default;					
+}
+				
+			
+dl.assignedMemberList dd {
+	width:82px;
+	float:left;
+	text-align:right;
+}	
+			
+dl.assignedMemberList dd input {
+	margin-left:8px;
+}
+				
+			
+			
+			
+/* JQUERY BOXES */			
+
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+
+.window {
+  position:absolute;
+  left:0;
+  top:0;
+  background-color:#ededed;
+  display:none;
+  z-index:9998;
+}	
+
+.treeModal {
+	/*width:760px;
+  	height:580px;*/
+  	padding:10px 20px;
+	width:800px;
+  	height:625px;
+	border:#FFFFFF 1px solid;
+}
+		
+.treeModal div.treeModalLeft {
+	float:left;
+	width:550px;
+	padding:10px 0 0 20px;
+	border-bottom:#CCCCCC 1px solid;
+}
+	
+.treeModal div.treeModalLeft h1 {
+	/*font-size:14px;*/
+	letter-spacing:2px;
+	font-weight:normal;
+	float:left;
+	
+	font-size:24px;
+	color:#ff6600;
+	
+}	
+
+.treeModal div.treeModalLeft h1 span {
+	font-size:24px;
+	display:block;
+	padding-top:8px;
+	color:#999999;
+}
+			
+.treeModal div.treeModalLeft small {
+	font-size:14px;
+	letter-spacing:2px;
+	font-weight:normal;
+	float:right;
+	width:150px;
+	position:relative;
+}				
+	
+.treeModal div.treeModalLeft ul.treePartHeader {
+	float:left;
+	width:540px;
+	list-style:none;
+	padding-top:25px;
+	padding-bottom:5px;
+}
+		
+.treeModal div.treeModalLeft ul.treePartHeader li {
+	float:left;
+}
+			
+.treeModal div.treeModalLeft ul.treePartHeader li.first {
+	width:172px;
+	font-size:16px;
+	font-weight:bold;
+	padding-left:4px;
+}
+				
+.treeModal div.treeModalLeft ul.treePartHeader li.second {
+	width:78px;
+	font-size:12px;
+	color:#999999;
+}
+				
+.treeModal div.treeModalLeft ul.treePartHeader li.third {
+	width:88px;
+	font-size:12px;
+	color:#999999;
+}
+
+.treeModal div.treeModalLeft ul.treePartHeader li.fourth {
+	width:108px;
+	font-size:12px;
+	color:#999999;
+}
+
+.treeModal div.treeModalLeft ul.treePartHeader li.fifth {
+	/*width:35px;
+	font-size:12px;
+	color:#999999;*/
+	width:60px;
+	font-size:12px;
+	color:#999999;
+}
+				
+				
+.treeModal div.treeModalLeft ul.treeLeaves {
+	float:left;
+	width:505px;
+	height:47px;
+	list-style:none;
+	padding-top:6px;
+	background-image:url(../images/leavesBg.gif);
+	background-repeat:no-repeat;
+	background-position:left top;
+	background-color:#FFFFFF;
+	margin-bottom:4px;
+}
+		
+.treeModal div.treeModalLeft ul.treeLeaves li {
+	float:left;
+}
+			
+.treeModal div.treeModalLeft ul.treeLeaves li.first {
+	width:164px;
+	font-size:16px;
+	font-weight:bold;
+	padding:10px 0 0 12px;
+}
+				
+.treeModal div.treeModalLeft ul.treeLeaves li.second {
+	width:70px;
+	font-size:12px;
+	color:#999999;
+	background-image:url(../images/sep.gif);
+	background-repeat:no-repeat;
+	background-position:right center;
+	padding:12px 0 8px 5px;
+}
+
+.treeModal div.treeModalLeft ul.treeLeaves li.third {
+	width:88px;
+	font-size:12px;
+	color:#999999;
+	background-image:url(../images/sep.gif);
+	background-repeat:no-repeat;
+	background-position:right center;
+	padding:12px 0 8px 5px;
+}
+
+.treeModal div.treeModalLeft ul.treeLeaves li.fourth {
+	width:108px;
+	font-size:12px;
+	color:#999999;
+	background-image:url(../images/sep.gif);
+	background-repeat:no-repeat;
+	background-position:right 7px;
+	padding:8px 0 8px 5px;
+}
+
+.treeModal div.treeModalLeft ul.treeLeaves li.fifth {
+	/*width:35px;
+	font-size:32px;
+	color:#ff6600;
+	padding:5px 0 0 2px;*/
+	width:40px;
+	/*font-size:12px;
+	color:#999999;*/
+	font-size:12px;
+	color:#ff6600;
+	padding:14px 0 8px 5px;
+}
+.treeModal div.treeModalLeft label.treeLeaveslabel1 {
+	position:absolute;
+	left:542px;
+	top:142px;
+	font-size:24px;
+	color:#ff6600;
+}
+.treeModal div.treeModalLeft label.treeLeaveslabel2 {
+	position:absolute;
+	left:542px;
+	top:193px;
+	font-size:24px;
+	color:#ff6600;
+}
+.treeModal div.treeModalLeft label.treeFlowerlabel1 {
+	position:absolute;
+	left:542px;
+	top:305px;
+	font-size:24px;
+	color:#ff6600;
+}
+.treeModal div.treeModalLeft label.treeFlowerlabel2 {
+	position:absolute;
+	left:542px;
+	top:357px;
+	font-size:24px;
+	color:#ff6600;
+}
+.treeModal div.treeModalLeft label.treeFruitlabel1 {
+	position:absolute;
+	left:542px;
+	top:469px;
+	font-size:24px;
+	color:#ff6600;
+}
+.treeModal div.treeModalLeft label.treeFruitlabel2 {
+	position:absolute;
+	left:542px;
+	top:521px;
+	font-size:24px;
+	color:#ff6600;
+}
+
+				
+.treeModal div.treeModalLeft ul.treeFlowers {
+	float:left;
+	width:505px;
+	height:47px;
+	list-style:none;
+	padding-top:6px;
+	background-image:url(../images/flowersBg.gif);
+	background-repeat:no-repeat;
+	background-position:left top;
+	background-color:#FFFFFF;
+	margin-bottom:4px;
+}
+		
+.treeModal div.treeModalLeft ul.treeFlowers li {
+	float:left;
+}
+			
+.treeModal div.treeModalLeft ul.treeFlowers li.first {
+	width:164px;
+	font-size:16px;
+	font-weight:bold;
+	padding:10px 0 0 12px;
+}
+
+.treeModal div.treeModalLeft ul.treeFlowers li.second {
+	width:70px;
+	font-size:12px;
+	color:#999999;
+	background-image:url(../images/sep.gif);
+	background-repeat:no-repeat;
+	background-position:right center;
+	padding:12px 0 8px 5px;
+}
+				
+.treeModal div.treeModalLeft ul.treeFlowers li.third {
+	width:88px;
+	font-size:12px;
+	color:#999999;
+	background-image:url(../images/sep.gif);
+	background-repeat:no-repeat;
+	background-position:right center;
+	padding:12px 0 8px 5px;
+}
+
+.treeModal div.treeModalLeft ul.treeFlowers li.fourth {
+	width:108px;
+	font-size:12px;
+	color:#999999;
+	padding:8px 0 8px 5px;
+	background-image:url(../images/sep.gif);
+	background-repeat:no-repeat;
+	background-position:right 7px;
+}
+
+.treeModal div.treeModalLeft ul.treeFlowers li.fifth {
+	/*width:35px;
+	font-size:32px;
+	color:#ff6600;
+	padding:5px 0 0 2px;*/
+	width:40px;
+	/*font-size:12px;
+	color:#999999;*/
+	font-size:12px;
+	color:#ff6600;
+	padding:14px 0 8px 5px;
+}
+			
+		
+.treeModal div.treeModalLeft ul.treeFruits {
+	float:left;
+	width:505px;
+	height:47px;
+	list-style:none;
+	padding-top:6px;
+	background-image:url(../images/fruitsBg.gif);
+	background-repeat:no-repeat;
+	background-position:left top;
+	background-color:#FFFFFF;
+	margin-bottom:4px;
+}
+		
+.treeModal div.treeModalLeft ul.treeFruits li {
+	float:left;
+}
+			
+.treeModal div.treeModalLeft ul.treeFruits li.first {
+	width:164px;
+	font-size:16px;
+	font-weight:bold;
+	padding:10px 0 0 12px;
+}
+
+.treeModal div.treeModalLeft ul.treeFruits li.second {
+	width:70px;
+	font-size:12px;
+	color:#999999;
+	background-image:url(../images/sep.gif);
+	background-repeat:no-repeat;
+	background-position:right center;
+	padding:12px 0 8px 5px;
+}
+				
+.treeModal div.treeModalLeft ul.treeFruits li.third {
+	width:88px;
+	font-size:12px;
+	color:#999999;
+	background-image:url(../images/sep.gif);
+	background-repeat:no-repeat;
+	background-position:right center;
+	padding:12px 0 8px 5px;
+}
+
+.treeModal div.treeModalLeft ul.treeFruits li.fourth {
+	width:108px;
+	font-size:12px;
+	color:#999999;
+	padding:8px 0 8px 5px;
+	background-image:url(../images/sep.gif);
+	background-repeat:no-repeat;
+	background-position:right 7px;
+}
+
+.treeModal div.treeModalLeft ul.treeFruits li.fifth {
+	/*width:35px;
+	font-size:32px;
+	color:#ff6600;
+	padding:5px 0 0 2px;*/
+	width:40px;
+	/*font-size:12px;
+	color:#999999;*/
+	font-size:12px;
+	color:#ff6600;
+	padding:14px 0 8px 5px;
+}	
+.treeModal div.treeModalLeft input.ok_button {
+	position:absolute;
+	top: 33px;
+	left: 570px;
+}
+.treeModal div.treeModalLeft div.observations {
+	position:absolute;
+	top: 100px;
+	left: 50px;
+}
+				
+.treeModal div.treeModalRight {
+	float:left;
+	background-color:#CCCCCC;
+	border-left:#7e7e7e 3px solid;
+	width:197px;
+	height:527px;
+	padding:15px;
+	color:#333333;
+	font-size:14px;
+}
+	
+.treeModal div.treeModalRight h1 {
+	font-size:15px;
+	color:#333333;
+	letter-spacing:2px;
+	padding-bottom:30px;
+}
+
+.treeModal div.treeModalRight span {
+	float:left;
+	width:195px;
+	padding:55px 0 0; 
+}
+
+.treeModal div.treeModalRight dl {
+	float:left;
+	width:97px;
+	padding:14px 0 0; 
+}
+		
+.treeModal div.treeModalRight dl dt {
+	float:left;
+	width:20px;
+}
+
+.treeModal div.treeModalRight dl dd {
+	float:left;
+	width:70px;
+}
+		
+	
+		
+.treeModal p {
+	float:right;
+	width:792px;
+	text-align:right;
+	border-top:#FFFFFF 1px solid;
+	padding:12px 8px 0 0;
+}
+			
+.treeModal p input {
+	width:100px;
+	height:32px;
+	background-color:#d6696a;
+	color:#ffffff;
+	font-size:15px;
+	border:none;
+	text-align:left;
+	padding:0 0 0 10px;
+	font-weight:bold;
+	cursor:pointer;
+	margin-right:5px;
+}	
+			
+.treeModal p input.close {
+	background-color:#dc8989;
+}
+			
+			
+	
+.selectTreeModal {
+	width:760px;
+  	height:580px;
+  	padding:10px 20px;
+}	
+			
+.selectTreeModal h1 {
+	font-size:24px;
+	color:#999999;
+}	
+
+.selectTreeModal div.selectTreeInputBox {
+	margin:25px 0px 25px;
+	padding:0px 5px;
+	background-image:url(../images/treeSelectInput.jpg);
+	background-repeat:no-repeat;
+	width:370px;
+	height:42px;
+	float:left;
+}
+	
+.selectTreeModal div.selectTreeInputBox input {
+	border:none;
+	background:none;
+	width:370px;
+	height:42px;
+	font-size:15px;
+	color:#333333;
+	font-weight:bold;
+	outline:none;
+}
+		
+.selectTreeModal div.selectionBox {
+	float:left;
+	position:relative;
+	width:755px;
+	height:365px;
+	background-color:#FFFFFF;
+}
+	
+ul.mainSelection {
+	position:absolute;
+	float:left;
+	list-style:none;
+	width:140px;
+}
+		
+ul.mainSelection {
+	float:left;
+}
+			
+ul.mainSelection a:link,
+ul.mainSelection a:visited {
+	float:left;
+	background-image:url(../images/treeMain.png);
+	background-repeat:no-repeat;
+	width:139px;
+	height:73px;
+}
+
+
+ul.mainSelection a.selected:link,
+ul.mainSelection a.selected:visited,
+ul.mainSelection a.selected:hover {
+	float:left;
+	background-image:url(../images/treeMainSelected.png);
+	background-repeat:no-repeat;
+	width:139px;
+	height:73px;
+}
+		
+
+ul.mainSelection a:hover, {
+	float: left;
+	width: 139px;
+	height: 73px;
+}
+		
+ul.subSelection {
+	position:absolute;
+	left:103px;
+	float:left;
+	list-style:none;
+	width:160px;
+	height:365px;
+	background: url(../images/subBg.gif) 0 repeat-y;
+}
+		
+ul.subSelection {
+	float:left;
+}
+			
+ul.subSelection a:link,
+ul.subSelection a:visited {
+	float:left;
+	width:110px;
+	/*height:35px;*/
+	height:27px;
+	padding:18px 0 0 35px;
+	font-weight:bold;
+	font-size:11px;
+	color:#333333;
+}
+				
+ul.subSelection a:hover,
+ul.subSelection a.selected:link,
+ul.subSelection a.selected:visited,
+ul.subSelection a.selected:hover {
+	background-image:url(../images/subSelected.gif);
+	background-repeat:no-repeat;
+}
+	
+/*li.subSelection {
+	height:100px;
+}*/
+
+.selectionBox blockquote {
+	position:absolute;
+	left:220px;
+	float:left;
+	list-style:none;
+	width:532px;
+}
+	
+.selectionBox blockquote dl.desc {
+	float:left;
+	width:510px;
+	padding:10px 0 50px 20px;
+}
+	
+.selectionBox blockquote dl.desc dt {
+	float:left;
+	width:180px;
+}	
+
+.selectionBox blockquote dl.desc dd {
+	float:left;
+	width:200px;
+	padding-top:10px;
+}	
+					
+.selectionBox blockquote dl.desc dd strong {
+	font-size:16px;
+	float:left;
+	width:300px;
+}
+
+.selectionBox blockquote dl.desc dd em {
+	float:left;
+	width:300px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	padding:8px 0 35px;
+}
+
+.selectionBox blockquote dl.desc dd span {
+	font-size:12px;
+	color:#333333;
+	float:left;
+	width:300px;
+}
+	
+
+.selectionBox blockquote dl.prop {
+	float:left;
+	width:145px;
+	font-size:11px;
+	color:#333333;
+	padding-left:30px;
+}
+
+.selectionBox blockquote dl.prop dt {
+	float:left;
+	width:50px;
+}	
+
+.selectionBox blockquote dl.prop dd {
+	float:left;
+	width:90px;
+}	
+	
+.selectTreeModal p {
+	float:right;
+	width:700px;
+	padding-top:40px;
+	text-align:right;
+}
+				
+.selectTreeModal p input {
+	width:80px;
+	height:32px;
+	background-color:#d6696a;
+	color:#ffffff;
+	font-size:15px;
+	border:none;
+	text-align:left;
+	padding:0 0 0 10px;
+	font-weight:bold;
+	cursor:pointer;
+	margin-right:5px;
+}	
+				
+.selectTreeModal p input.close {
+	background-color:#dc8989;
+}
+
+	
+	
+.addTreeModal {
+	width:800px;
+ 	height:580px;	
+ 	/*padding:10px 20px;*/
+}
+
+.addTreeModal h2 {
+	font-size:14px;
+	font-weight:normal;
+	padding:10px 20px;
+}
+
+.addTreeModal h1 {
+	font-size:24px;
+	font-weight:normal;
+	padding:0px 20px 20px;
+}
+
+.addTreeModal blockquote {
+	float:left;
+	width:358px;
+	padding:10px 20px;
+}
+
+.addTreeModal blockquote.border {
+	border-right:#cccccc 1px solid;
+}
+	
+.addTreeModal blockquote dl {
+	float:left;
+	width:360px;
+	padding:0 0 5px 0;
+}
+
+.addTreeModal blockquote dl.extraTopPadding {
+	padding:25px 0 5px 0;
+}
+
+.addTreeModal blockquote dl dt {
+	float:left;
+	width:105px;
+	padding:5px 0 0;
+}
+
+.addTreeModal blockquote dl dd {
+	float:left;
+	width:255px;
+}
+			
+.addTreeModal blockquote dl dd div {
+	float:left;
+	width:194px;
+	height:27px;
+	background-image:url(../images/addTreeFormFieldBg.jpg);
+	background-repeat:no-repeat;
+	padding:3px 3px 0 3px;
+}
+				
+.addTreeModal blockquote dl dd div input {
+	width:192px;
+	border:none;
+	font-size:12px;
+	outline:none;
+	padding:2px 0 0 1px;
+	color:#999999;
+}
+
+.addTreeModal blockquote dl dd div select {
+	width:192px;
+	border:none;
+	font-size:12px;
+	outline:none;
+	padding:0px 0 0 1px;
+	color:#999999;
+}
+				
+.addTreeModal blockquote strong {
+	font-weight:normal;
+	padding:0px 0 5px;
+	float:left;
+	width:300px;
+}
+
+.addTreeModal blockquote p {
+	float:left;
+	width:290px;
+	height:190px;
+	background-image:url(../images/addTreeFormTextareaBg.jpg);
+	background-repeat:no-repeat;
+	padding:5px;
+}
+				
+.addTreeModal blockquote p textarea {
+	width:285px;
+	height:185px;
+	border:none;
+	outline:none;
+}
+				
+				
+				
+	
+.addTreeModal span {
+	float:right;
+	width:750px;
+	padding:15px;
+	text-align:right;
+	background-image:url(../images/line.jpg);
+	background-repeat:repeat-x;
+	background-position:left top;
+	margin-top:10px;
+}
+			
+.addTreeModal span input {
+	width:80px;
+	height:32px;
+	background-color:#d6696a;
+	color:#ffffff;
+	font-size:15px;
+	border:none;
+	text-align:left;
+	padding:0 0 0 10px;
+	font-weight:bold;
+	cursor:pointer;
+	margin-right:5px;
+}	
+			
+.addTreeModal span input.close {
+	background-color:#dc8989;
+}
+
+.addMemberModal {
+	width:400px;
+ 	height:500px;	
+ 	/*padding:10px 20px;*/
+}
+
+.addMemberModal h2 {
+	font-size:14px;
+	font-weight:normal;
+	padding:10px 20px;
+}
+
+.addMemberModal h1 {
+	font-size:24px;
+	font-weight:normal;
+	padding:0px 20px 20px;
+}
+
+.addMemberModal blockquote {
+	float:left;
+	width:358px;
+	padding:10px 20px;
+}
+	
+.addMemberModal blockquote.border {
+	border-right:#cccccc 1px solid;
+}
+	
+.addMemberModal blockquote dl {
+	float:left;
+	width:360px;
+	padding:0 0 5px 0;
+}
+
+.addMemberModal blockquote dl.extraTopPadding {
+	padding:25px 0 5px 0;
+}
+
+.addMemberModal blockquote dl dt {
+	float:left;
+	width:105px;
+	padding:5px 0 0;
+}
+
+.addMemberModal blockquote dl dd {
+	float:left;
+	width:255px;
+}
+
+.addMemberModal blockquote dl dd div {
+	float:left;
+	width:194px;
+	height:27px;
+	background-image:url(../images/addTreeFormFieldBg.jpg);
+	background-repeat:no-repeat;
+	padding:3px 3px 0 3px;
+}
+				
+.addMemberModal blockquote dl dd div input {
+	width:192px;
+	border:none;
+	font-size:12px;
+	outline:none;
+	padding:2px 0 0 1px;
+	color:#999999;
+}
+
+.addMemberModal blockquote dl dd div select {
+	width:192px;
+	border:none;
+	font-size:12px;
+	outline:none;
+	padding:0px 0 0 1px;
+	color:#999999;
+}
+				
+.addMemberModal blockquote strong {
+	font-weight:normal;
+	padding:0px 0 5px;
+	float:left;
+	width:300px;
+}
+				
+.addMemberModal blockquote p {
+	float:left;
+	width:290px;
+	height:190px;
+	background-image:url(../images/addTreeFormTextareaBg.jpg);
+	background-repeat:no-repeat;
+	padding:5px;
+}
+				
+.addMemberModal blockquote p textarea {
+	width:285px;
+	height:185px;
+	border:none;
+	outline:none;
+}
+				
+				
+				
+	
+.addMemberModal span {
+	float:right;
+	width:330px;
+	padding:15px;
+	text-align:right;
+	background-image:url(../images/line.jpg);
+	background-repeat:repeat-x;
+	background-position:left top;
+	margin-top:20px;
+}
+			
+.addMemberModal span input {
+	width:80px;
+	height:32px;
+	background-color:#d6696a;
+	color:#ffffff;
+	font-size:15px;
+	border:none;
+	text-align:left;
+	padding:0 0 0 10px;
+	font-weight:bold;
+	cursor:pointer;
+	margin-right:5px;
+}	
+			
+.addMemberModal span input.close {
+	background-color:#dc8989;
+}
+
+
+
+.tooltip {
+	background-image:url(../images/tooltipBg.jpg);
+	background-repeat:repeat-y;
+	position:absolute;
+	width:254px;
+	left:330px;
+	top:362px;
+}
+	
+.tooltip small {
+	float:left;
+	width:234px;
+	padding:0 10px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	font-style:italic;
+}
+
+.ac_results {
+background-color:white;
+border:1px solid black;
+overflow:hidden;
+padding:0;
+z-index:99999;
+}
+
+.ac_results li {
+-x-system-font:menu;
+cursor:default;
+display:block;
+font-family:-moz-use-system-font;
+font-size:12px;
+font-size-adjust:-moz-use-system-font;
+font-stretch:-moz-use-system-font;
+font-style:-moz-use-system-font;
+font-variant:-moz-use-system-font;
+font-weight:-moz-use-system-font;
+line-height:16px;
+margin:0;
+overflow:hidden;
+padding:2px 5px;
+}
+
+.ac_odd {
+background-color:#EEEEEE;
+}
+
+.ac_over {
+background-color:#0A246A;
+color:white;
+}
+
+.ac_odd {
+background-color:#EEEEEE;
+}
+
+.treeModal div.treeModalRight {
+	float:left;
+	background-color:#CCCCCC;
+	border-left:#7e7e7e 3px solid;
+	width:197px;
+	height:527px;
+	padding:15px;
+	color:#333333;
+	font-size:14px;
+}
+	
+.treeModal div.treeModalRight h1 {
+	font-size:15px;
+	color:#333333;
+	letter-spacing:2px;
+	padding-bottom:30px;
+}
+	
+.treeModal div.treeModalRight span {
+	float:left;
+	width:195px;
+	padding:55px 0 0; 
+}
+		
+.treeModal div.treeModalRight dl {
+	float:left;
+	width:97px;
+	padding:14px 0 0; 
+}
+		
+.treeModal div.treeModalRight dl dt {
+	float:left;
+	width:20px;
+}
+			
+.treeModal div.treeModalRight dl dd {
+	float:left;
+	width:70px;
+}
+		

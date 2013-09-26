@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+        <script type="text/javascript" src="./jquery.js"></script>
+        <script type="text/javascript" src="http://underscorejs.org/underscore.js"></script>
+		
+        <script type="text/javascript">
+        /*
+[{
+                    y: 55.11,
+                    color: colors[0],
+                    drilldown: {
+                        name: 'MSIE versions',
+                        categories: ['MSIE 6.0', 'MSIE 7.0', 'MSIE 8.0', 'MSIE 9.0'],
+                        data: [10.85, 7.35, 33.06, 2.81],
+                        color: colors[0]
+                    }
+                },
+                */
+
+function transform(phpData) {
+    var data = [];
+    var colors = Highcharts.getOptions().colors;
+
+    for (var i=0, l = phpData.categories.length; i < l; i++) {
+        var fdata = {}, dd ={};
+        var family = phpData.categories[i];
+        var total = _.reduce(phpData.data[family], function (a, b) {
+            return ['bulla', a[1] + b[1]];
+        })[1];
+        fdata.y = total;
+        dd.name = family;
+        fdata.color = colors[i%10];
+        dd.color = colors[(i+3)%10];
+
+        dd.categories = _.map(phpData.data[family], function(a) {return a[0];});
+        dd.data  = _.map(phpData.data[family], function(a) {return a[1];});
+        fdata.drilldown = dd;
+        data[data.length] = fdata;
+    }
+    var threshold = 10;
+    console.log(data);
+    return data;
+}
+
+function draw(categories, data) {
+    
+        var colors = Highcharts.getOptions().colors,
+            name = 'Browser brands';
+    
+        // Build the data arrays
+        var browserData = [];
+        var versionsData = [];
+        for (var i = 0; i < data.length; i++) {
+    
+            // add browser data
+            browserData.push({
+                name: categories[i],
+                y: data[i].y,
+                color: data[i].color
+            });
+    
+            // add version data
+            for (var j = 0; j < data[i].drilldown.data.length; j++) {
+                var brightness = 0.2 - (j / data[i].drilldown.data.length) / 5 ;
+                versionsData.push({
+                    name: data[i].drilldown.categories[j],
+                    y: data[i].drilldown.data[j],
+                    color: Highcharts.Color(data[i].color).brighten(brightness).get()
+                });
+            }
+        }
+    
+        // Create the chart
+        $('#container').highcharts({
+            chart: {
+                type: 'pie'
+            },
+            title: {
+                text: 'Season Watch Data visualization '
+            },
+            yAxis: {
+                title: {
+                    text: 'Season Watch'
+                }
+            },
+            plotOptions: {
+                pie: {
+                    shadow: false,
+                    center: ['50%', '50%']
+                }
+            },
+            tooltip: {
+        	    valueSuffix: ''
+            },
+            series: [{
+                name: 'Browsers',
+                data: browserData,
+                size: '60%',
+                dataLabels: {
+                    formatter: function() {
+                        return this.y > 1 ? this.point.name : null;
+                    },
+                    color: 'white',
+                    distance: -30
+                }
+            }, {
+                name: 'Versions',
+                data: versionsData,
+                size: '80%',
+                innerSize: '60%',
+                dataLabels: {
+                    formatter: function() {
+                        // display only if larger than 1
+                        return this.y > 1 ? '<b>'+ this.point.name +':</b> '+ this.y +''  : null;
+                    }
+                }
+            }]
+        });
+    }
+
+$(function () {
+    console.log('request')
+    function f(data) {
+        console.log(data);
+        draw(data.categories, transform(data));
+    }
+    f({"categories":["Moraceae","Anacardiaceae","Caesalpiniaceae","Phyllanthaceae","Verbenaceae","Fabaceae","Myrtaceae","Meliaceae","Sapotaceae","Euphorbiaceae","Apocynaceae","Santalaceae","Rutaceae","Lythraceae","Bombacaceae","Rubiaceae","Ulmaceae","Oleaceae","Tiliacaea","Magnoliaceae","","Bignoniaceae","Ericaceae","Annonaceae","Hippocastanaceae","Combretaceae","Simarubaceaea","Acanthaceae","Burseraceae",null,"Bixaceae","Arecaceae","Dilleniaceae","Rhamnaceae","Malvaceae","Fagaceae"],"data":{"Moraceae":[["Jackfruit",889],["Peepal",83],["Country Fig",50],["Banyan",22]],"Anacardiaceae":[["Mango (unknown variety)",517],["Mango: Aabehayat",3],["Mango: Alphonso",3],["Mango: Bathua",2],["Mango: Airi",2],["Mango: Arkapuneet",1],["Mango: Chosa",1],["Mango: Sukul",1],["Mango: Zawahiri",1],["Mango: Allampur Beneshan",1],["Mango: Amrapali",1],["Mango: Olour",1],["Mango: Suvarnarekha",1]],"Caesalpiniaceae":[["Tamarind",229],["Copper-pod",44]],"Phyllanthaceae":[["Amla",186]],"Verbenaceae":[["Teak",171],["Spanish Flag",43],["Gamar",25]],"Fabaceae":[["Indian Laburnum",149],["Gulmohur",106],["Pongam Tree",84],["Purple Bauhinia",81],["Rain tree",47],["White Babool",47],["Krishna Siris",41],["True Ashoka",36],["Indian Coral ",18],["Babool",8],["Jhinjheri",3],["Siris",2],["Bastard Rosewood",2],["Flame of the Forest",2],["Indian Rosewood",1]],"Myrtaceae":[["Jamun",144]],"Meliaceae":[["Neem",104],["China Berry",1],["Indian Mahogany",1]],"Sapotaceae":[["Maulsari",83],["Mahua",7]],"Euphorbiaceae":[["Chandada",78]],"Apocynaceae":[["Devil's Tree",57]],"Santalaceae":[["Sandalwood",46]],"Rutaceae":[["Wood Apple",39]],"Lythraceae":[["Pride of India",33],["Duabanga",1]],"Bombacaceae":[["Red Silk Cotton",28],["White Silk Cotton",4],["Floss Silk Tree",2]],"Rubiaceae":[["Kadamb",15]],"Ulmaceae":[["Indian Elm",14]],"Oleaceae":[["Night Flowering Jasmine ",12]],"Tiliacaea":[["Singapore Cherry",10]],"Magnoliaceae":[["Champa",8]],"":[["Box Myrtle",7],["Lal champa",7],["Himalayan Maple",2],["Himalayan Cherry",1],["Walnut",1]],"Bignoniaceae":[["African Tulip",6],["Jacaranda",5],["Sausage Tree",3],["Caribbean Trumpet Tree",2],["Indian Cork Tree",1]],"Ericaceae":[["Himalayan Rhododendron",6]],"Annonaceae":[["Mast Tree",5]],"Hippocastanaceae":[["Indian Horsechestnut",4]],"Combretaceae":[["Axlewood",4],["Arjun",3],["Indian Almond",2]],"Simarubaceaea":[["Tree of Heaven",4]],"Acanthaceae":[["Grey Mangrove",3]],"Burseraceae":[["Black Dammer",3]],null:[["White Siris",3]],"Bixaceae":[["Yellow Silk Cotton",2]],"Arecaceae":[["Fish-tail Palm",2]],"Dilleniaceae":[["Elephant Apple",1]],"Rhamnaceae":[["Ber",1]],"Malvaceae":[["Kanak Champa",1]],"Fagaceae":[["Grey Oak",1]]}});
+})
+		</script>
+	</head>
+	<body>
+<script src="./js/highcharts.js"></script>
+<script src="./js/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 600px; height: 600px; margin: 0 auto"></div>
+
+	</body>
+</html>
